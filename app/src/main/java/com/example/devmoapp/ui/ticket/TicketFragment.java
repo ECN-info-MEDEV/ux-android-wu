@@ -11,12 +11,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.devmoapp.R;
 
 public class TicketFragment extends Fragment {
 
-    private TicketViewModel mViewModel;
+    public ImageView testImageView;
 
     public static TicketFragment newInstance() {
         return new TicketFragment();
@@ -26,13 +27,14 @@ public class TicketFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+//        testImageView = findViewById();
         return inflater.inflate(R.layout.ticket_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(TicketViewModel.class);
+//        mViewModel = new ViewModelProvider(this).get(TicketViewModel.class);
         // TODO: Use the ViewModel
     }
 
